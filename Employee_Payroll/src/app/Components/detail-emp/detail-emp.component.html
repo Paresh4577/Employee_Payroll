@@ -1,0 +1,135 @@
+<!-- <div className="row me-3 mt-4 text-center">
+    <div class="card">
+        <div class="card-body">
+            <h1>MeetingID : {{Emp.empId}}</h1>
+        <h1>OrganizerName :  {{Emp.empName}}</h1>
+        <h1>ParticipantName :  {{Emp.empEmail}}</h1>
+        <h1>Date :  {{Emp.empAltContactNo}}</h1>
+        <h1>Time :  {{Emp.empContactNo}}</h1>
+        <div class="row">
+            <div class="col-3 text-center">
+                <button class="btn btn-primary" routerLink="/StudentEdit/+{{Emp.empId}}">Update</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-danger" routerLink="/">Delete</button>   
+            </div>
+        
+        </div>
+        
+        </div>
+    </div>
+    
+    </div> -->
+
+
+    <!-- <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-4">Employee Details</h4>
+                        <p class="card-text"><strong>Employee ID:</strong> {{Emp.empId}}</p>
+                        <p class="card-text"><strong>Employee Name:</strong> {{Emp.empName}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.empEmail}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.addressLine1}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.bankName}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.bankBranch}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.accountNo}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.city}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.state}}</p>
+                        <p class="card-text"><strong>Employee Email:</strong> {{Emp.city}}</p>
+                        <p class="card-text"><strong>Employee Contact No:</strong> {{Emp.empContactNo}}</p>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="btn btn-warning" routerLink="/EmpEdit/+{{Emp.empId}}"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                <path
+                                    d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                            </svg> Edit</button>
+
+                        <button class="btn btn-danger ms-3" (click)="deleteEmp(Emp.empId)" routerLink="/employee"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-trash" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                <path
+                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1h4.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                            </svg> Delete</button>
+                             <a class="btn btn-danger" (click)="deleteEmp(Emp.empId)" routerLink="/employee">Delete</a> -->
+                        <!-- </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --> 
+
+
+
+
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card custom-card">
+                    <div class="card-body text-center">
+                        <h1 class="card-title mb-4">Employee Details</h1>
+                        <h4 class="card-text"><strong>Employee ID:</strong> {{Emp.empId}}</h4>
+                        <h4 class="card-text"><strong>Employee Name:</strong> {{Emp.empName}}</h4>
+                        <h4 class="card-text"><strong>Employee Email:</strong> {{Emp.empEmail}}</h4>
+                        <h4 class="card-text"><strong>Address:</strong> {{Emp.addressLine1}}</h4>
+                        <h4 class="card-text"><strong>Bank Name:</strong> {{Emp.bankName}}</h4>
+                        <h4 class="card-text"><strong>Bank Branch:</strong> {{Emp.bankBranch}}</h4>
+                        <h4 class="card-text"><strong>Account No:</strong> {{Emp.accountNo}}</h4>
+                        <h4 class="card-text"><strong>City:</strong> {{Emp.city}}</h4>
+                        <h4 class="card-text"><strong>State:</strong> {{Emp.state}}</h4>
+                        <h4 class="card-text"><strong>Contact No:</strong> {{Emp.empContactNo}}</h4>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="btn btn-outline-warning me-2 zoom-button" routerLink="/EmpEdit/+{{Emp.empId}}">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001m-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708z" />
+                                </svg> 
+                            </button>
+                            <button class="btn btn-outline-danger ms-2 zoom-button" (click)="deleteEmp(Emp.empId)" routerLink="/employee">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1h4.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                </svg> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    /* CSS */
+.custom-card {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.custom-btn {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.custom-btn:hover {
+    background-color: #333; /* Darker background color on hover */
+    color: #fff; /* Text color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.zoom-button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.zoom-button:hover {
+    color: #fff; /* Text color when hovered */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+</style>    
+    

@@ -1,0 +1,70 @@
+<!-- employee-form.component.html -->
+<div class="container mt-5">
+    <h2 class="text-center">Add New Employee</h2>
+    <form #myForm="ngForm" (ngSubmit)="save(myForm.value)">
+        <div class="form-group mb-3">
+            <label for="empId">Employee ID</label>
+            <input type="text" class="form-control" id="empId" [(ngModel)]="employee.empId" name="empId">
+        </div>
+        <div class="form-group mb-3">
+            <label for="empName">Employee Name</label>
+            <input type="text" class="form-control" id="empName" [(ngModel)]="employee.empName" name="empName">
+        </div>
+        <div class="form-group mb-3">
+            <label for="empContactNo">Employee Contact No</label>
+            <input type="text" class="form-control" id="empContactNo" [(ngModel)]="employee.empContactNo" name="empContactNo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="empAltContactNo">Employee Alternate Contact No</label>
+            <input type="text" class="form-control" id="empAltContactNo" [(ngModel)]="employee.empAltContactNo" name="empAltContactNo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="empEmail">Employee Email</label>
+            <input type="email" class="form-control" id="empEmail" [(ngModel)]="employee.empEmail" name="empEmail">
+        </div>
+        <div class="form-group mb-3">
+            <label for="addressLine1">Address Line 1</label>
+            <input type="text" class="form-control" id="addressLine1" [(ngModel)]="employee.addressLine1" name="addressLine1">
+        </div>
+        <div class="form-group mb-3">
+            <label for="addressLine2">Address Line 2</label>
+            <input type="text" class="form-control" id="addressLine2" [(ngModel)]="employee.addressLine2" name="addressLine2">
+        </div>
+        <div class="form-group mb-3">
+            <label for="pincode">Pincode</label>
+            <input type="text" class="form-control" id="pincode" [(ngModel)]="employee.pincode" name="pincode">
+        </div>
+        <div class="form-group mb-3">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" [(ngModel)]="employee.city" name="city">
+        </div>
+        <div class="form-group mb-3">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" [(ngModel)]="employee.state" name="state">
+        </div>
+        <div class="form-group mb-3">
+            <label for="bankName">Bank Name</label>
+            <input type="text" class="form-control" id="bankName" [(ngModel)]="employee.bankName" name="bankName">
+        </div>
+        <div class="form-group mb-3">
+            <label for="ifsc">IFSC Code</label>
+            <input type="text" class="form-control" id="ifsc" [(ngModel)]="employee.ifsc" name="ifsc">
+        </div>
+        <div class="form-group mb-3">
+            <label for="accountNo">Account Number</label>
+            <input type="text" class="form-control" id="accountNo" [(ngModel)]="employee.accountNo" name="accountNo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="bankBranch">Bank Branch</label>
+            <input type="text" class="form-control" id="bankBranch" [(ngModel)]="employee.bankBranch" name="bankBranch">
+        </div>
+        <div class="form-group mb-3">
+            <label for="salary">Salary</label>
+            <input type="number" class="form-control" id="salary" [(ngModel)]="employee.salary" name="salary" step="0.01">
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-success" type="submit" *ngIf="id==0">Add</button>
+            <button class="btn btn-warning" type="submit" *ngIf="id>0">Edit</button>
+        </div>
+    </form>
+</div>

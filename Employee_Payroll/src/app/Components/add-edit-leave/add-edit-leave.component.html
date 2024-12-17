@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <h2>Leave Details Form</h2>
+
+    <form>
+        <div class="form-group mb-3">
+            <label for="leaveId">Leave ID</label>
+            <input type="number" class="form-control" id="leaveId" [(ngModel)]="LeaveObj.LeaveId" name="leaveId">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="employeeId">Employee Name</label>
+            <select class="form-control" id="employeeId" [(ngModel)]="LeaveObj.EmployeeId" name="employeeId">
+                <option *ngFor="let emp of EmployeeObj" [value]="emp.empId">{{emp.empName}}</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="leaveDate">Leave Date</label>
+            <input type="date" class="form-control" id="leaveDate" [(ngModel)]="LeaveObj.LeaveDate" name="leaveDate">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="leaveReason">Leave Reason</label>
+            <input type="text" class="form-control" id="leaveReason" [(ngModel)]="LeaveObj.LeaveReason" name="leaveReason">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="noOfFullDayLeaves">No. of Full Day Leaves</label>
+            <input type="number" class="form-control" id="noOfFullDayLeaves" [(ngModel)]="LeaveObj.NoOfFullDayLeaves" name="noOfFullDayLeaves">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="noOfHalfDayLeaves">No. of Half Day Leaves</label>
+            <input type="number" class="form-control" id="noOfHalfDayLeaves" [(ngModel)]="LeaveObj.NoOfHalfDayLeaves" name="noOfHalfDayLeaves">
+        </div>
+
+        <button type="submit" *ngIf="LeaveId!=0" class="btn btn-primary" (click)="saveMe()">Update Leave</button>
+        <button type="submit" *ngIf="LeaveId==0" class="btn btn-primary" (click)="saveMe()">Add New Leave</button>
+    </form>
+</div>
+

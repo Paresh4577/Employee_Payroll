@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <h2>Employee Advance Form</h2>
+
+    <form>
+        <div class="form-group mb-3">
+            <label for="advanceId">Advance ID</label>
+            <input type="number" class="form-control" id="advanceId" [(ngModel)]="AdvanceObj.AdvanceId" name="advanceId">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="empId">Employee Name</label>
+            <select class="form-control" id="empId" [(ngModel)]="AdvanceObj.empId" name="empId">
+                <option *ngFor="let emp of EmployeeObj" [value]="emp.empId">{{emp.empName}}</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="advanceDate">Advance Date</label>
+            <input type="date" class="form-control" id="advanceDate" [(ngModel)]="AdvanceObj.AdvanceDate" name="advanceDate">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="advanceAmount">Advance Amount</label>
+            <input type="number" class="form-control" id="advanceAmount" [(ngModel)]="AdvanceObj.AdvanceAmount" name="advanceAmount">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="reason">Reason</label>
+            <textarea class="form-control" id="reason" [(ngModel)]="AdvanceObj.Reason" name="reason" rows="3"></textarea>
+        </div>
+
+        <button type="submit" *ngIf="AdvanceId!=0" class="btn btn-primary" (click)="saveMe()">Update Advance</button>
+        <button type="submit" *ngIf="AdvanceId==0" class="btn btn-primary" (click)="saveMe()">Add New Advance</button>
+    </form>
+</div>
+
